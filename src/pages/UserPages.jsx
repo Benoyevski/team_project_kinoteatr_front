@@ -17,7 +17,6 @@ const UserPages = () => {
 
   const user = useSelector((state) => state.users.users);
 
-  console.log(user);
   return (
     <div>
       {user.map((item) => {

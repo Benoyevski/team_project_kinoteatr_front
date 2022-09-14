@@ -47,7 +47,6 @@ const MainPages = () => {
   };
 
   const filteredgenre = movies.filter((item) => {
-    console.log(item.year);
     if (!id) {
       return true;
     }

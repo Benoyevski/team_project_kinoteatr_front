@@ -25,7 +25,6 @@ export const fetchUser = createAsyncThunk("fetch/user", async (_, thunkAPI) => {
 export const addToFavorite = createAsyncThunk(
   "addFavorite/user",
   async ({ id, movieId }, thunkAPI) => {
-    console.log(id, "123");
     try {
       const res = await fetch(`http://localhost:4000/users/addFav/${id}`, {
         method: "PATCH",
@@ -36,7 +35,6 @@ export const addToFavorite = createAsyncThunk(
         body: JSON.stringify({ movie: movieId }),
       });
       const data = await res.json();
-      console.log(data);
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
@@ -58,8 +56,7 @@ const userSclice = createSlice({
         state.load = true;
       })
       .addCase(addToFavorite.fulfilled, (state, action) => {
-        console.log(action.payload, "213");
-        state.favorite.unshift(action.payload.movie);
+        state.favorite.push(action.payload);
       });
   },
 });

@@ -1,28 +1,42 @@
-
 .movie_card {
   width: 200px;
-  height: 370px;
+  height: 400px;
   margin: 40px;
   border-radius: 3px;
-
+  border: 1px solid white;
 }
 
 .movie_image img {
   width: 100%;
   height: 300px;
 }
-.movie_title {
+
+.title_favorite {
   color: white;
   display: flex;
   justify-content: space-between;
+  font-size: 18px;
+  width: 100%;
 }
+
+.title_favorite h4 {
+  margin: auto 0;
+}
+
 .movie_inner {
-  font-size: 10px;
+  margin-top: 10px;
+  font-size: 18px;
   color: rgb(150, 147, 147);
+}
+
+.noFavorite {
+  cursor: pointer;
+  color: white;
+  margin: 10px;
 }
 
 .favorite {
   cursor: pointer;
-  color: white;
+  color: red;
   margin: 10px;
 }
