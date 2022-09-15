@@ -3,6 +3,7 @@ import { createAction } from "@reduxjs/toolkit";
 const initialState = {
   movies: [],
   moviesFilter: [],
+  load:false
 };
 
 export const fetchmovies = createAsyncThunk(
@@ -29,13 +30,19 @@ const moviesSclice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(fetchmovies.fulfilled, (state, action) => {
+    builder
+    .addCase(fetchmovies.fulfilled, (state, action) => {
       state.movies = action.payload;
+      state.load = false
       if (state.moviesFilter.length < 1) {
         state.moviesFilter = action.payload;
       }
-    });
+    })
+    .addCase(fetchmovies.pending,(state,action)=>{
+      state.load = true
+    })
   },
+  
 });
 export const { filterMovies } = moviesSclice.actions;
 
