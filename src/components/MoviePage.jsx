@@ -47,7 +47,6 @@ const MoviePage = () => {
     dispatch(showRating());
     
   };
-console.log(load2)
   const movies = useSelector((state) => state.movies.movies);
 
   return (

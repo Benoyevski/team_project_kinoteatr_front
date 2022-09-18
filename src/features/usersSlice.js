@@ -106,6 +106,7 @@ const userSclice = createSlice({
       .addCase(fetchUser.fulfilled, (state, action) => {
         state.users = action.payload;
         state.load = false;
+        state.error = null
       })
       .addCase(fetchUser.pending, (state, action) => {
         state.load = true;
