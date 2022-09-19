@@ -37,12 +37,12 @@ const Header = () => {
             <ul className={styles.nav_link_exit}>
               <li>
                 <Link onClick={handleExit} to="/">
-                  Выйти
+                  <button className={styles.exit_btn}>Выйти</button>
                 </Link>
               </li>
               <li>
                 <Link o to="/user/like">
-                  Личный кабинет
+                  <button className={styles.lk_btn}>Личный кабинет</button>
                 </Link>
               </li>
             </ul>

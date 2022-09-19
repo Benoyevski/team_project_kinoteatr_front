@@ -8,19 +8,40 @@
 }
 
 .signIn_btn {
-  width: 200px;
+  width: 290px;
   padding: 8px;
   border-radius: 8px;
   background: #fdb830;
   font-size: 16px;
   text-decoration: none;
   color: black;
+  font-weight: 700;
+}
+
+.exit_btn {
+  padding: 8px;
+  border-radius: 8px;
+  background: #fdb830;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.lk_btn {
+  padding: 8px;
+  border-radius: 8px;
+  background: #fdb830;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
 .nav_menu {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
 }
 .nav_link_list {
   display: flex;

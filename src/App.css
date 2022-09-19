@@ -160,21 +160,20 @@ body {
   border: none;
   color: white;
   box-sizing: border-box;
-  padding: 1.3%;
-  height: 80%;
   font-size: large;
   margin-left: 5%;
   border-radius: 5px;
+  padding: 3%;
+  height: fit-content;
 }
 .rating6-10 {
   display: flex;
   justify-content: center;
-  background-color: rgb(6, 180, 6);
+  background-color: rgb(28, 130, 28);
   width: 15%;
   border-radius: 5px;
   box-sizing: border-box;
   padding: 2%;
-  margin-bottom: 3%;
   border-radius: 5px;
 }
 .rating3-6 {

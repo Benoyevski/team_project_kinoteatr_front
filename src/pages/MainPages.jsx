@@ -97,7 +97,7 @@ const MainPages = () => {
   return (
     <div className={styles.main}>
       <div className={styles.main_title}>
-        <h2>Все фильмы</h2>
+        <h2>Список фильмов</h2>
       </div>
       <div className={styles.categoryfilters}>
         <div className={styles.categoryfilters_item}>
