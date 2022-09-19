@@ -54,7 +54,7 @@ const Comments = () => {
             <div class="newtons-cradle__dot"></div>
             <div class="newtons-cradle__dot"></div>
             <div class="newtons-cradle__dot"></div>
-          </div> : <button onClick={() => handleAddComment({ comment })}>
+          </div> : <button disabled={!comment} className={comment ? styles.comment_btn : styles.comment_btn_off} onClick={() => handleAddComment({ comment })}>
 
             Добавить
           </button>}
