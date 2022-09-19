@@ -13,8 +13,6 @@ body {
   margin: auto;
 }
 
-
-
 .textInputWrapper {
   position: relative;
   width: 180px;
@@ -159,7 +157,7 @@ body {
 }
 .ratedButton {
   background-color: #ff0044;
-  border:none ;
+  border: none;
   color: white;
   box-sizing: border-box;
   padding: 1.3%;
@@ -199,8 +197,7 @@ body {
   padding: 2%;
   border-radius: 5px;
   margin-bottom: 3%;
-  color: rgb(252, 248, 248)
-
+  color: rgb(252, 248, 248);
 }
 .rating0 {
   display: flex;
@@ -220,7 +217,7 @@ body {
   display: flex;
 }
 
-.btn_delete{
+.btn_delete {
   width: 100%;
   height: 35px;
   cursor: pointer;
@@ -229,21 +226,22 @@ body {
   background: red;
   border: none;
   border-radius: 5px;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
   background: #e62222;
- }
- 
- .btn_delete, button span {
+}
+
+.btn_delete,
+button span {
   transition: 200ms;
- }
- 
- .btn_delete .text {
+}
+
+.btn_delete .text {
   transform: translateX(50px);
   color: white;
   font-weight: bold;
- }
- 
- .btn_delete .icon {
+}
+
+.btn_delete .icon {
   position: absolute;
   border-left: 1px solid #c41b1b;
   transform: translateX(150px);
@@ -252,38 +250,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
- }
- 
- .btn_delete svg {
+}
+
+.btn_delete svg {
   width: 15px;
   fill: #eee;
- }
- 
- .btn_delete:hover {
+}
+
+.btn_delete:hover {
   background: #ff3636;
- }
- 
- .btn_delete:hover .text {
+}
+
+.btn_delete:hover .text {
   color: transparent;
- }
- 
- .btn_delete:hover .icon {
+}
+
+.btn_delete:hover .icon {
   width: 150px;
   border-left: none;
   transform: translateX(20px);
- }
- 
- .btn_delete:focus {
+}
+
+.btn_delete:focus {
   outline: none;
- }
- 
- .btn_delete:active .icon svg {
+}
+
+.btn_delete:active .icon svg {
   transform: scale(0.8);
- }
+}
 
-
-
- .newtons-cradle {
+.newtons-cradle {
   --uib-size: 50px;
   --uib-speed: 1.2s;
   --uib-color: #474554;
@@ -294,75 +290,85 @@ body {
   justify-content: center;
   width: var(--uib-size);
   height: var(--uib-size);
- }
- 
- .newtons-cradle__dot {
+}
+
+.newtons-cradle__dot {
   position: relative;
   display: flex;
   align-items: center;
   height: 100%;
   width: 25%;
   transform-origin: center top;
- }
- 
- .newtons-cradle__dot::after {
-  content: '';
+}
+
+.newtons-cradle__dot::after {
+  content: "";
   display: block;
   width: 100%;
   height: 25%;
   border-radius: 50%;
   background-color: var(--uib-color);
- }
- 
- .newtons-cradle__dot:first-child {
+}
+
+.newtons-cradle__dot:first-child {
   animation: swing var(--uib-speed) linear infinite;
- }
- 
- .newtons-cradle__dot:last-child {
+}
+
+.newtons-cradle__dot:last-child {
   animation: swing2 var(--uib-speed) linear infinite;
- }
- 
- @keyframes swing {
+}
+
+@keyframes swing {
   0% {
-   transform: rotate(0deg);
-   animation-timing-function: ease-out;
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
   }
- 
+
   25% {
-   transform: rotate(70deg);
-   animation-timing-function: ease-in;
+    transform: rotate(70deg);
+    animation-timing-function: ease-in;
   }
- 
+
   50% {
-   transform: rotate(0deg);
-   animation-timing-function: linear;
+    transform: rotate(0deg);
+    animation-timing-function: linear;
   }
- }
- 
- @keyframes swing2 {
+}
+
+@keyframes swing2 {
   0% {
-   transform: rotate(0deg);
-   animation-timing-function: linear;
+    transform: rotate(0deg);
+    animation-timing-function: linear;
   }
- 
+
   50% {
-   transform: rotate(0deg);
-   animation-timing-function: ease-out;
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
   }
- 
+
   75% {
-   transform: rotate(-70deg);
-   animation-timing-function: ease-in;
+    transform: rotate(-70deg);
+    animation-timing-function: ease-in;
   }
- }
+}
 
-
-button{
+button {
   border: none;
 }
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin-top: 0;
   margin-bottom: 0.5em;
   color: rgba(255, 255, 255, 0.85);
   font-weight: 800;
+}
+.videoContainer {
+  margin: 0 auto;
+  display: flex;
+}
+#videoPlayer {
+  margin: 0 auto;
 }
