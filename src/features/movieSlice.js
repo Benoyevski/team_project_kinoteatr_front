@@ -5,6 +5,7 @@ const initialState = {
   movies: [],
   moviesFilter: [],
   load: false,
+  loadComments:false,
   comments: [],
   isVisible: false,
 };
@@ -125,7 +126,13 @@ const moviesSclice = createSlice({
       })
       .addCase(addComment.fulfilled, (state, action) => {
         state.comments.push(action.payload);
-        state.load = false;
+        state.loadComments = false;
+      })
+      .addCase(addComment.pending, (state, action) => {
+        state.loadComments = true;
+      })
+      .addCase(addComment.rejected, (state, action) => {
+        state.loadComments = false;
       })
       .addCase(buymovies.fulfilled, (state, action) => {
         state.movies.map((item) => {

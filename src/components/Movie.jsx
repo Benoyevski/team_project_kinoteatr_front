@@ -19,6 +19,7 @@ const Movie = ({ movie }) => {
   const idroute = params.id;
   const id = useSelector((state) => state.application.id);
   const user = useSelector((state) => state.users.users);
+  const userload = useSelector((state) => state.users.load);
   const error = useSelector((state) => state.users.error);
   const notify = () =>
     toast("Фильм добавлен в избранное!", {

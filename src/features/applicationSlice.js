@@ -73,7 +73,7 @@ const applicationSlice = createSlice({
         state.error = null
         state.token = action.payload.token;
         state.id = action.payload.id;
-        window.location.reload()
+        
       });
   },
 });
