@@ -46,6 +46,8 @@ const MoviePage = () => {
   const handleRated = () => {
     dispatch(showRating());
   };
+
+
   const movies = useSelector((state) => state.movies.movies);
 
   return (

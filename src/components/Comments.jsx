@@ -8,6 +8,7 @@ import { addComment } from "../features/movieSlice";
 import Comment from "./Comment";
 
 const Comments = () => {
+  const load = useSelector((state) => state.movies.loadComments);
   const token = useSelector((state)=> state.application.token)
   const [comment, setComment] = useState();
   const dispatch = useDispatch();
@@ -46,9 +47,14 @@ const Comments = () => {
             placeholder="Написать комментарий"
             rows={4}
           />
-          <button onClick={() => handleAddComment({ comment })}>
+         {load ? <div class="newtons-cradle">
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+          </div> : <button onClick={() => handleAddComment({ comment })}>
             Добавить
-          </button>
+          </button>}
         </div>
         <Comment id={id} />
       </div>
