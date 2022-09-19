@@ -11,7 +11,7 @@ const Comment = ({ id }) => {
             return (
               <div key={item._id} className={styles.one_comment}>
                 <div className={styles.comment_login}>
-                  <h3>{item.user.login}</h3>
+                  <h3 className={styles.user_login} >{item.user.login}</h3>
                 </div>
                 <p>{item.comment}</p>
               </div>

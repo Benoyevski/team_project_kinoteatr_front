@@ -39,6 +39,7 @@
   font-size: 20px;
   line-height: 35px;
   padding: 10px;
+  margin-top: 60px;
 }
 
 .alert {
@@ -110,6 +111,11 @@
   color: #facc6d;
 }
 
+.user_login {
+  color: #facc6d;
+}
+
+
 h2 {
   width: 80%;
   margin: 10px auto;
@@ -130,7 +136,7 @@ textarea {
   outline-color: #ea003d;
 }
 
-.textarea_div button {
+.comment_btn {
   min-width: 100px;
   padding: 8px 15px;
   height: 50px;
@@ -140,11 +146,21 @@ textarea {
   border-radius: 10px;
 }
 
-.textarea_div button:hover {
+.comment_btn_off {
+  min-width: 100px;
+  padding: 8px 15px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #ae6478;
+  color: white;
+  border-radius: 10px;
+}
+
+.comment_btn:hover {
   background-color: #f4275e;
 }
 
-.textarea_div button:active {
+.comment_btn:active {
   transform: scale(0.9);
   transition: 0.2s;
 }

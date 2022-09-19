@@ -46,7 +46,7 @@ const Comments = () => {
             placeholder="Написать комментарий"
             rows={4}
           />
-          <button onClick={() => handleAddComment({ comment })}>
+          <button className={!comment ? styles.comment_btn_off : styles.comment_btn } disabled={!comment} onClick={() => handleAddComment({ comment })}>
             Добавить
           </button>
         </div>

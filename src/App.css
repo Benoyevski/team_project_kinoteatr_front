@@ -175,6 +175,8 @@ body {
   box-sizing: border-box;
   padding: 2%;
   border-radius: 5px;
+  text-align: center;
+  align-items: center;
 }
 .rating3-6 {
   display: flex;
@@ -186,6 +188,8 @@ body {
   padding: 2%;
   margin-bottom: 3%;
   color: grey;
+  text-align: center;
+  align-items: center;
 }
 .rating1-3 {
   display: flex;
@@ -197,6 +201,8 @@ body {
   border-radius: 5px;
   margin-bottom: 3%;
   color: rgb(252, 248, 248);
+  text-align: center;
+  align-items: center;
 }
 .rating0 {
   display: flex;
@@ -207,6 +213,8 @@ body {
   box-sizing: border-box;
   padding: 2%;
   margin-bottom: 3%;
+  text-align: center;
+  align-items: center;
 }
 .ratedButton:hover {
   background-color: red;

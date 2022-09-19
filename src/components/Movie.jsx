@@ -26,7 +26,7 @@ const Movie = ({ movie }) => {
     });
 
   const notifydelete = () =>
-    toast("Фильм удален!", {
+    toast("Фильм удален из избранных!", {
       type: "error",
     });
 
