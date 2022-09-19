@@ -46,7 +46,6 @@ const MoviePage = () => {
   const handleRated = () => {
     dispatch(showRating());
   };
-  console.log(load2);
   const movies = useSelector((state) => state.movies.movies);
 
   return (
@@ -125,7 +124,7 @@ const MoviePage = () => {
                             }
                           >
                             {item.rating}
-                          </div>{" "}
+                          </div>
                           {token ? (
                             <button
                               onClick={handleRated}
