@@ -17,7 +17,7 @@ body {
   position: relative;
   width: 180px;
   margin: 0px 5px;
-  --accent-color: #a3e583;
+  --accent-color: #e9971c;
 }
 
 .textInputWrapper:before {
@@ -74,9 +74,9 @@ body {
 
 .textInputWrapper .textInput {
   border-radius: 5px 5px 0px 0px;
-  box-shadow: 0px 2px 5px rgb(35 35 35 / 30%);
+  box-shadow: 0px 2px 5px #100e19;
   max-height: 36px;
-  background-color: #252525;
+  background-color: #100e19;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 200ms;
   transition-property: background-color;
@@ -98,7 +98,7 @@ body {
 .textInputWrapper:focus-within .textInput,
 .textInputWrapper .textInput:focus,
 .textInputWrapper .textInput:active {
-  background-color: #353535;
+  background-color: #25233f;
 }
 
 .textInputWrapper:focus-within .textInput::placeholder {

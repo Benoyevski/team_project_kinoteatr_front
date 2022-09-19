@@ -97,7 +97,7 @@ const MainPages = () => {
   return (
     <div className={styles.main}>
       <div className={styles.main_title}>
-        <h2>ВСЕ ФИЛЬМЫ</h2>
+        <h2>Все фильмы</h2>
       </div>
       <div className={styles.categoryfilters}>
         <div className={styles.categoryfilters_item}>
@@ -189,7 +189,7 @@ const MainPages = () => {
           <input
             value={value}
             onChange={(e) => setvalue(e.target.value)}
-            placeholder="Type Here"
+            placeholder="Поиск"
             type="text"
             className="textInput"
           />

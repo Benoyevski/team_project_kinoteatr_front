@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import styles from "../components/styles/header.module.css";
 
 const Header = () => {
-  const load = useSelector((state)=> state.users.load)
-  const user = useSelector((state)=> state.users.users)
+  const load = useSelector((state) => state.users.load);
+  const user = useSelector((state) => state.users.users);
   const token = useSelector((state) => state.application.token);
   const handleExit = () => {
     localStorage.clear();
@@ -17,7 +17,7 @@ const Header = () => {
       <div className={styles.nav_menu}>
         <div className={styles.header_logo}>
           <Link to="/">
-            <h1>BOMBIBBO</h1>
+            <h1>BOMBIBBO.TV</h1>
           </Link>
         </div>
         {/* <div className={styles.nav_link}>
@@ -26,16 +26,13 @@ const Header = () => {
                         <li><Link to="/video">Каталог</Link></li>
                     </ul>
                 </div> */}
-        <div className="nav_exit">
+        <div className={styles.nav_exit}>
           {!token ? (
-            <ul className={styles.nav_link_exit}>
-              <li>
-                <Link to="/login">Войти</Link>
-              </li>
-              <li>
-                <Link to="/auth">Зарегистрироваться</Link>
-              </li>
-            </ul>
+            <Link to="/login">
+              <button className={styles.signIn_btn}>
+                Войти или Зарегистрироваться
+              </button>
+            </Link>
           ) : (
             <ul className={styles.nav_link_exit}>
               <li>
@@ -47,7 +44,6 @@ const Header = () => {
                 <Link o to="/user/like">
                   Личный кабинет
                 </Link>
-                
               </li>
             </ul>
           )}
