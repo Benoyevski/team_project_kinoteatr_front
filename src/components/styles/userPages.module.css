@@ -23,7 +23,6 @@ body{
     margin: auto;
     margin-top: 20px;
     width: 500px;
-   
     display: flex;
     justify-content: space-between;
 }

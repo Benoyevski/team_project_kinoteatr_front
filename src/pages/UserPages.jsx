@@ -46,7 +46,7 @@ const UserPages = () => {
               
             </div>
          
-              <div>
+              <div className={styles.outlet}>
               <Outlet />
                 </div>
                
