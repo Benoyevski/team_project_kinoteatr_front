@@ -6,6 +6,7 @@ import { loginThunk } from "../features/applicationSlice";
 import styles from "./styles/authPage.module.css";
 
 const SingIn = () => {
+  const load = useSelector((state)=> state.application.load)
   const token = useSelector((state) => state.application.token);
   const dispatch = useDispatch();
   const [login, setLogin] = useState("");
@@ -37,7 +38,7 @@ const SingIn = () => {
         placeholder="ПАРОЛЬ"
         onChange={(e) => handleChangePas(e)}
         value={password}
-        type="text"
+        type="password"
       />
       <p>У вас нет аккаунта? </p>
 
@@ -45,9 +46,14 @@ const SingIn = () => {
         <Link to="/auth">Зарегистрируйтесь</Link>
       </p>
 
-      <button className={styles.auth_btn} onClick={() => handleClick()}>
+      {load  ? <div class="newtons-cradle">
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+          </div> : <button className={styles.auth_btn} onClick={() => handleClick()}>
         Войти
-      </button>
+      </button>}
     </div>
   );
 };
